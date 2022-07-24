@@ -1,4 +1,4 @@
-const jwellery = [
+const pallete = [
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
@@ -105,12 +105,12 @@ const jwellery = [
 
 ];
 
-function productIterator(jwellery){
+function productIterator(pallete){
     let nextIndex=0;
     return {
         next: function(){
-            return nextIndex<jwellery.length
-            ?{value: jwellery[nextIndex++],done: false}
+            return nextIndex<pallete.length
+            ?{value: pallete[nextIndex++],done: false}
             :{done: true};
         },
     };
@@ -119,10 +119,10 @@ function productIterator(jwellery){
 
 
 let verticalScroller = document.getElementById("vertical-Scroller");
-console.log(jwellery.length);
-let product=productIterator(jwellery);
+console.log(pallete.length);
+let product=productIterator(pallete);
 
-for(let i=0;i<jwellery.length;i++){
+for(let i=0;i<pallete.length;i++){
 let currentProduct=product.next().value;
 let showcase=document.createElement('div');
 showcase.classList.add('showcase');

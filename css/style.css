@@ -56,7 +56,6 @@
   *, *::before, *::after {
     margin: 0;
     padding: 0;
-    
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -99,6 +98,106 @@
       font-size: 2.1vw;
    }
   }
+
+
+
+  /* 
+  login ==============================================================
+  */
+
+  .login-back{
+   background-color: var(--sonic-silver);
+   position: fixed;
+   height: 100vh;
+   z-index: 10;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   opacity: 0.5;
+
+  }
+  .login{
+   z-index: 20;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+  }
+  .hidden{
+   display: none;
+  }
+  .login-box{
+   display: flex;
+   background-color: var(--white);
+   position: relative;
+  }
+  #login-close-btn{
+   position: absolute;
+   right: 0.5rem;
+   top: 0.5rem;
+  }
+  .login-img{
+   height: 25rem;
+  }
+  .login-form{
+   padding: 2rem;
+  }
+  .login-form hr{
+   width: 17rem;
+  }
+  .login-input{
+   width: 17rem;
+   height: 2rem;
+   border: none;
+   font-size: 18px;
+  }
+  #login-btn{
+   border-radius: var(--border-radius-md);
+   background-color: var(--salmon-pink);
+   width: 17rem;
+   height: 3rem;
+   margin-top: 2rem;
+   margin-bottom: 7rem;
+  }
+  .login-form a{
+   color: var(--salmon-pink);
+   font-size: 0.9rem;
+  } 
+  @media(max-width:750px){
+   .login-img-div{
+      display: none;
+   }
+   .login-input{
+      width: 250px;
+      height: 25px;
+      font-size: 15px;
+   }
+   .login-form{
+      font-size: 15px;
+      padding: 20px;
+   }
+   .login-form hr{
+      width: 250px;
+     }
+     #login-btn{
+      height: 30px;
+      width: 250px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      border-radius: var(--border-radius-sm);
+     }
+     .login-form a{
+      font-size: 13px;
+     }   
+  }
+
 
 
   /*
@@ -150,6 +249,7 @@
     border: 1px solid var(--cultured);
     padding: 5px 30px;
     border-radius: var(--border-radius-md);
+    cursor: pointer;
  }
  .header-top-login:hover{
     background-color: var(--salmon-pink); 
@@ -180,8 +280,8 @@
    position: relative;
  }
  .icon-btn{
-    height: 25px;
-    width: 25px;
+    height: 32px;
+    width: 32px;
  }
   .count {
     background: var(--bittersweet);
@@ -204,7 +304,7 @@
    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
    background-color: var(--white);
    width: 90vw;
-   height: 45px;
+   height: 60px;
    position: fixed;
    bottom: 0px;
    left: 5%;
@@ -415,11 +515,11 @@ main===============================================================
 }
 
 .showcase-content :nth-child(2){
-   font-size: 15px;
+   font-size: 18px;
 }
 .showcase-content :nth-child(3){
    margin-top: 5px;
-   font-size: 19px;
+   font-size: 20px;
    color: black;
    font-weight:bold;
 }
@@ -511,5 +611,22 @@ footer===============================================================
    }
    .mobile-bottom-navigation ion-icon{
       font-size: 25px;
+   }
+   .slider-p{
+      font-size: 13px;
+   }
+   .slider-p2{
+      font-size: 13px;
+   }
+   .slider-h{
+      font-size: 18px;
+   }
+   .slide-btn{
+      border-radius: var(--border-radius-sm);
+      width: 80px;
+      font-size: 10px;
+   }
+   .slider-content{
+      margin: 8%;
    }
 }
