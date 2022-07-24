@@ -49,7 +49,7 @@ const jwellery = [
     }
     ,
     {
-        type: "",
+        type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/10.jpg",
