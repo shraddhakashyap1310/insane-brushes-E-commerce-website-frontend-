@@ -486,6 +486,9 @@ main===============================================================
 .deal1-content{
    padding: var(--fs-4);
 }
+.deal1-content h1{
+   font-size: 2vw;
+}
 .deal-btn{
    width: 10rem;
 }
@@ -591,6 +594,12 @@ footer===============================================================
    }
    .active{
       display: block;
+   }
+   .deal1-content p{
+      font-size: 13px;
+   }
+   .deal1-content h1{
+      font-size: 15px;
    }
 }
 
