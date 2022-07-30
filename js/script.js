@@ -50,48 +50,56 @@ const topDeals = [
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/earings/clay3.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/3.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/4.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/5.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Earings",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/earings/clay11.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/7.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/8.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/9.jpg",
+        refrence: "../components/product.html",
     }
     ,
     {
@@ -99,54 +107,63 @@ const topDeals = [
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/10.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/11.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/12.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/13.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/14.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/15.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/16.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/17.jpg",
+        refrence: "../components/product.html",
     },
     {
         type: "Pallete",
         details: "Polyster clay earings|Pink Color|Rainbow shape",
         price: "500",
         image: "../images/pallete/1.jpg",
+        refrence: "../components/product.html",
     }
 
 ];
@@ -173,6 +190,7 @@ let currentProduct=product.next().value;
 let showcase=document.createElement('div');
 showcase.classList.add('showcase');
 showcase.innerHTML=`
+                    <a href="${currentProduct.refrence}">
                   <div class="showcase-img">
                     <img src="${currentProduct.image}" alt="showcaseimg" class="showcase-img">
                   </div>
@@ -181,6 +199,7 @@ showcase.innerHTML=`
                     <p>${currentProduct.details}</p>
                     <p>&#8377; ${currentProduct.price}</p>
                   </div>
+                  </a>
                 `;
 verticalScroller.appendChild(showcase);
 console

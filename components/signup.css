@@ -1,0 +1,63 @@
+:root {
+
+    /**
+     * colors
+     */
+  
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --eerie-black: hsl(0, 0%, 13%);
+    --salmon-pink: hsl(353, 100%, 78%);
+    --sandy-brown: hsl(29, 90%, 65%);
+    --bittersweet: hsl(0, 100%, 70%);
+    --ocean-green: hsl(152, 51%, 52%);
+    --davys-gray: hsl(0, 0%, 33%);
+    --cultured: hsl(0, 0%, 93%);
+    --white: hsl(0, 100%, 100%);
+    --onyx: hsl(0, 0%, 27%);
+  
+     
+    /**
+     * border-radius
+     */
+  
+    --border-radius-md: 10px;
+    --border-radius-sm: 5px;
+  
+  }
+
+  .container
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.header-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+ }
+ .Pink-color{
+    color: var(--salmon-pink);
+ }
+ .signup-box{
+    border: 1px solid var(--cultured);
+    border-radius: var(--border-radius-md);
+    padding: 2rem;
+    height: 30rem;
+ }
+ .signup-input{
+    border-radius: var(--border-radius-sm);
+    width: 17rem;
+   height: 2rem;
+   font-size: 20px;
+   padding: 5px;
+ }
+ #signup-btn{
+   background-color: var(--salmon-pink);
+   width: 17rem;
+   height: 2.5rem;
+   margin-top: 2rem;
+   margin-bottom: 7rem;
+ }
