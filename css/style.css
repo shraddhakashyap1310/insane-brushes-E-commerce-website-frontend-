@@ -496,7 +496,7 @@ main===============================================================
 
 .vertical-scroller{
    margin-top: var(--fs-2);
-   height: 18%;
+   height: 20vh;
    display: grid;
    grid-template-columns: auto;
    grid-template-columns: repeat(4, 1fr);
