@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="cart-first-part">
+          <div class="cart-sub-part">
+            <h2>CART</h2>
+          </div>
+          <div class="cart-sub-part">
+            <div>
+              <img
+                class="cart-product-img"
+                src="../images/pallete/8.jpg"
+                alt="product img"
+              />
+            </div>
+            <div class="cart-product-content">
+              <h3 class="Pink-color">PALLETE</h3>
+              <div class="item-content">
+                <p>Polyster clay earings|Pink Color|Rainbow shape</p>    <br>    
+                <strong>&#8377; <span class="item-price">400</span></strong>
+              </div>
+                
+              <div class="cart-details">
+              <button class="remove-item">REMOVE ITEM</button>
+              <div><span><button class="item-count-input" onclick="subtractItem(this)"><strong>-</strong></button></span><input type="text" class="item-count-input amount" value="1"><span><button class="item-count-input" onclick="addItem(this)"><strong>+</strong></button></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-sub-part">
+            <div>
+              <img
+                class="cart-product-img"
+                src="../images/pallete/8.jpg"
+                alt="product img"
+              />
+            </div>
+            <div class="cart-product-content">
+              <h3 class="Pink-color">PALLETE</h3>
+              <div class="item-content">
+                <p>Polyster clay earings|Pink Color|Rainbow shape</p>    <br>    
+                <p><strong>&#8377; <span class="item-price">450</span></strong></p>
+              </div>
+                
+              <div class="cart-details">
+              <button class="remove-item">REMOVE ITEM</button>
+              <div><span><button class="item-count-input" onclick="subtractItem(this)"><strong>-</strong></button></span><input type="text" class="item-count-input amount" value="1"><span><button class="item-count-input" onclick="addItem(this)"><strong>+</strong></button></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-price-part">
+          <div class="cart-price-content">
+            <h2>ITEM DETAILS</h2>
+            <br />
+            <hr />
+            <div class="cart-details">
+              <div><p>Price</p></div>
+              <div class="price"></div>
+            </div>
+            <div class="cart-details">
+              <div>Discount</div>
+              <div class="discount"></div>
+            </div>
+            <div class="cart-details">
+              <div>Delivery charge</div>
+              <div class="delivery"></div>
+            </div>
+            <hr />
+            <div class="cart-details">
+              <div><h3>Total</h3></div>
+              <div><h3 class="total"></h3></div>
+            </div>
+          </div>
+          <div class="cart-price-btn">
+            <button>Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="cart.js"></script>
+  </body>
+</html>
